@@ -8,6 +8,9 @@ interface IDatabase
 
     // will return all news in your database
     public function GetNews();
+    
+    // return all data for news in specified title, category and date created
+    public function GetNewsByTitleCategoryDate($title,$category,$created_at);
 
     // will return all pages from MENU in your database
     public function GetPagesFromMenu();
@@ -15,13 +18,11 @@ interface IDatabase
     // will return all pages from SUBMENU in your database
     public function GetPagesFromSubmenu();
 
-    // return all data for news in specified title, category and date created
-    public function GetNewsByTitleCategoryDate($title,$category,$created_at);
 
     
     //insert functions
 
-    // will insert one country by call (if is not inserted) 
+    // will insert message from contact form
     public function InsertMessage($message);  
    
 }
