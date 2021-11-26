@@ -23,7 +23,7 @@
                 <a class="nav-link active fw-bold" aria-current="page" href="index.php">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle fw-bold" href="index.php" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  Info
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
