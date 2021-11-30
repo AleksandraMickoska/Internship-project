@@ -24,6 +24,6 @@ interface IDatabase
 
     // will insert message from contact form
     public function InsertMessage($message);  
-   
+      
 }
 ?>
