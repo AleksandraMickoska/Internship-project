@@ -19,6 +19,18 @@ require_once './MenuPagesLayouts/header.php';
               
             </select>
         </div>  
+
+        <div class="row">
+            <?php
+                require_once './Services/Database.php';
+                GetNews();
+            ?>
+
+        </div> 
+
+
+
+
         <!-- <div class="dropdown pt-3 d-flex">
             <select name="category" class = "text-dark bg-white fw-bold" style="width: 30%;">
                 <option class = "text-dark bg-white fw-bold" value="y" >Одбери категорија</option>
@@ -28,9 +40,9 @@ require_once './MenuPagesLayouts/header.php';
         <div class="dropdown pt-3 d-flex">
             <select name="date" class = "text-dark bg-white fw-bold" style="width: 30%;">
                 <option class = "text-dark bg-white fw-bold" value="z" >Одбери датум на објава</option>
-                 -->
-            </select> -->
-        </div>            
+                
+            </select>
+        </div>   -->          
     </form>
     
 </body>
@@ -39,6 +51,6 @@ require_once './MenuPagesLayouts/header.php';
 
 
 
-<?
+<?php
 require_once './MenuPagesLayouts/footer.php';
 ?>
