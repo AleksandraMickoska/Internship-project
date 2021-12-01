@@ -1,5 +1,5 @@
 <?php
-require_once 'header.php';
+require_once './MenuPagesLayouts/header.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,29 +16,20 @@ require_once 'header.php';
         <div class="dropdown pt-3 d-flex">
             <select name="news_title" class = "text-dark bg-white fw-bold" style="width: 30%;">
                 <option class = "text-dark bg-white fw-bold" value="x" >Одбери наслов на статија</option>
-                <?php
-                require_once("Database.php");
-                GetNews();
-                ?>
+              
             </select>
         </div>  
-        <div class="dropdown pt-3 d-flex">
+        <!-- <div class="dropdown pt-3 d-flex">
             <select name="category" class = "text-dark bg-white fw-bold" style="width: 30%;">
                 <option class = "text-dark bg-white fw-bold" value="y" >Одбери категорија</option>
-                <?php
-                require_once("Database.php");
-                GetCategory();
-                ?>
+                
             </select>
         </div>   
         <div class="dropdown pt-3 d-flex">
             <select name="date" class = "text-dark bg-white fw-bold" style="width: 30%;">
                 <option class = "text-dark bg-white fw-bold" value="z" >Одбери датум на објава</option>
-                <?php
-                require_once("Database.php");
-                GetDateOfNews();
-                ?>
-            </select>
+                 -->
+            </select> -->
         </div>            
     </form>
     
@@ -49,5 +40,5 @@ require_once 'header.php';
 
 
 <?
-require_once 'footer.php';
+require_once './MenuPagesLayouts/footer.php';
 ?>
