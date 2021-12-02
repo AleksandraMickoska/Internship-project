@@ -11,4 +11,13 @@
 {
     width: 3%;
     height: 3%;
+};
+#hero
+{
+    background-color: #830b14;
+};
+    
+#saying1
+{
+    margin-top: -5em;
 }

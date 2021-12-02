@@ -44,8 +44,9 @@
               </li> 
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-dark fw-bold" type="submit">Search</button>
+              <a class="btn btn-outline-dark fw-bold" href="search.php">Search here</a> 
+              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark fw-bold" type="submit">Search</button> -->
             </form>
           </div>
         </div>
