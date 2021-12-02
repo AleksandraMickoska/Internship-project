@@ -23,7 +23,7 @@ require_once './MenuPagesLayouts/header.php';
         <div class="row">
             <?php
                 require_once './Services/Database.php';
-                GetNews();
+                GetNewsTitle();
             ?>
 
         </div> 

@@ -9,12 +9,13 @@
 
           //queries
           
-          private $_getNews = "SELECT title FROM `news` ";
+          private $_getNewsTitle = "SELECT 'title' FROM `news` ";
 
           private $_GetNewsByTitleCategoryDate = "SELECT * FROM `news` WHERE title=:title , category=:category AND created_at=:created_at";
 
           private $_getPagesFromMenu = "SELECT * FROM `menu` ";
           
+          private $_getCategories = "SELECT 'category_name' FROM 'categories'";
           
           private $_getCountries = "SELECT Country From countries";
 
@@ -34,11 +35,20 @@
           }
 
           // Methods
-          function GetNews()
+          function GetNewsTitle()
           { 
                $pdo = new PDO("mysql:host=localhost;dbname=" . DBNAME, DBUSER, DBPASS);
-               $stmt = $pdo->prepare($this->$_getNews);
+               $stmt = $pdo->prepare($this->_getNewsTitle);
                $stmt -> execute([]);
                return $stmt->fetchAll();
           }
+
+          function GetCategories()
+          {
+               $pdo = new PDO("mysql:host=localhost;dbname=" . DBNAME, DBUSER, DBPASS);
+               $stmt = $pdo->prepare($this->_getCategories);
+               $stmt -> execute([]);
+               return $stmt->fetchAll();
+          }
+     }
 ?>

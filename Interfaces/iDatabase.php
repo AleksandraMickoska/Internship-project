@@ -7,7 +7,10 @@ interface IDatabase
     public function GetLastInsertedDataForCategory($categoryId);
 
     // will return all news in your database
-    public function GetNews();
+    public function GetNewsTitle();
+
+     //will return all categories in your database
+    public function GetCategories();   
     
     // return all data for news in specified title, category and date created
     public function GetNewsByTitleCategoryDate($title,$category,$created_at);
