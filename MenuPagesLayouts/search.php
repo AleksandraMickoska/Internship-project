@@ -1,3 +1,6 @@
+<?php
+    require_once './header.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,18 +11,23 @@
 </head>
 <body>
     <div class="container-fluid text-center bg-light">
-        <h2>You can search through our archive</h2>
+        <h2 class="m-3">You can search through our archive</h2>
         <div class="row">
-            <h3>Choose a category</h3><br>
-            <button class="btn">main dish</button>
-            <button class="btn">dessert</button>
-            <button class="btn">soup</button>
-            <button class="btn">salad</button>
-            <button class="btn">drink</button>
-            <button class="btn">pasta</button>
-            <button class="btn">pizza</button>
+            <div class="col">
+                <h3>Choose a category</h3><br>
+                <button class="btn border border-dark m-2 p-2"  onclick="">main dish</button>
+                <button class="btn border border-dark m-2 p-2"  onclick="">dessert</button>
+                <button class="btn border border-dark m-2 p-2"  onclick="">soup</button>
+                <button class="btn border border-dark m-2 p-2"  onclick="">salad</button>
+                <button class="btn border border-dark m-2 p-2"  onclick="">drink</button>
+                <button class="btn border border-dark m-2 p-2"  onclick="">pasta</button>
+                <button class="btn border border-dark m-2 p-2"  onclick="">pizza</button>
+            </div> 
         </div>
 
     </div>
 </body>
 </html>
+<?php
+    require_once './footer.php';
+?>
